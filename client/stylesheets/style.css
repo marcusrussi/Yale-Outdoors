@@ -1,18 +1,30 @@
-/*body {
-background-image: url("http://2.bp.blogspot.com/-8v41d3hKe8I/UCJ96ENh7EI/AAAAAAAAClY/9OFzpAcf1v8/s1600/canmore_rocky_mountains-1920x1200.jpg");
+body {
+background-image: url("http://upload.wikimedia.org/wikipedia/commons/7/7e/Franconia_Ridge.jpg");
 background-size: cover;
-}*/
-
-.navbar-padding {
-	padding-top: 70px;
 }
 
-nav.affix {
+div.main-nav {
+	padding-right: 0;
+	padding-left: 0;
+	position: fixed;
+	z-index: 1;
+	opacity: .85;
+}
+
+div.moveable {
+	transition: all 200ms ease 0;
+	position: fixed;
+	float: none;
+}
+
+nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
 }
 
-.affix, .affix-top {
-	position: static;
+div.announcements{
+    margin-top: 20%;
+    background-color: white;
+    opacity: .8;
 }

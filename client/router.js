@@ -1,17 +1,29 @@
 Router.configure({
-	layout: 'layout',
+	layoutTemplate: 'layout',
 	
 	loadingTemplate: 'loading',
 	
-	renderTemplates: {
-		'welcome': { to: 'welcome' },
+	yieldTemplates: {
 		'nav': { to: 'nav' }
 	}
 });
 
+navbarControl = function () {
+	Session.set('navbar-position', 0);
+	console.log('running navbarcontrol');
+}
+
+Router.before(navbarControl, {
+	except: ['home']
+});
+
 Router.map(function () {
 	this.route('home', {
-		path: '/'
+		path: '/',
+		
+		before: function () {
+			Session.set('navbar-position', '40%');
+		}
 	});
 	
 	this.route('trips');

@@ -1,17 +1,9 @@
-Template.nav.helpers({
-	fixed: function () {
-		return false; //Session.get('fixed');
-	}
-});
-
 Template.nav.created = function () {
 	Meteor.defer(function () {
-		$('nav').affix({
-			offset: {
-				top: function () {
-					return $('.welcome').height();
-				}
-			}
-		});	
+		Deps.autorun(function () {
+			position = Session.get('navbar-position');
+		
+			$('div.moveable').css('margin-top', position);
+		});
 	});
 }

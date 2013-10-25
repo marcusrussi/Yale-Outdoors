@@ -1,8 +1,15 @@
 <template name="nav">
-	<div data-spy="affix" data-offset-top="200">
-		<!-- add navbar-fixed-top to this when scrollpast -->
-		<nav class="navbar navbar-default{{#if fixed}} navbar-fixed-top{{/if}}" role="navigation">
-	    
+	<div class="col-md-2 main-nav">
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="{{pathFor 'home'}}">Yale Outdoors</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="col-md-10 col-md-offset-2 main-nav moveable">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -14,7 +21,6 @@
 		
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
 					<li><a href="{{pathFor 'trips'}}">Trips</a></li>
 					<li><a href="{{pathFor 'leaders'}}">Leaders</a></li>
 					<li><a href="{{pathFor 'membership'}}">Membership</a></li>
