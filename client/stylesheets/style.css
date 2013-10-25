@@ -1,8 +1,18 @@
 /*body {
-	background-image: url("http://2.bp.blogspot.com/-8v41d3hKe8I/UCJ96ENh7EI/AAAAAAAAClY/9OFzpAcf1v8/s1600/canmore_rocky_mountains-1920x1200.jpg");
-	background-size: cover;
+background-image: url("http://2.bp.blogspot.com/-8v41d3hKe8I/UCJ96ENh7EI/AAAAAAAAClY/9OFzpAcf1v8/s1600/canmore_rocky_mountains-1920x1200.jpg");
+background-size: cover;
 }*/
 
 .navbar-padding {
 	padding-top: 70px;
+}
+
+nav.affix {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.affix, .affix-top {
+	position: static;
 }

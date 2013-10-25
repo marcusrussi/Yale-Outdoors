@@ -1,28 +1,30 @@
 <template name="nav">
-	<!-- add navbar-fixed-top to this when scrollpast -->
-	<nav class="navbar navbar-default{{#if fixed}} navbar-fixed-top{{/if}}" role="navigation">
+	<div data-spy="affix" data-offset-top="200">
+		<!-- add navbar-fixed-top to this when scrollpast -->
+		<nav class="navbar navbar-default{{#if fixed}} navbar-fixed-top{{/if}}" role="navigation">
 	    
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
 		
-		<div class="collapse navbar-collapse navbar-ex1-collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="{{pathFor 'trips'}}">Trips</a></li>
-				<li><a href="{{pathFor 'leaders'}}">Leaders</a></li>
-				<li><a href="{{pathFor 'membership'}}">Membership</a></li>
-				<li><a href="{{pathFor 'gear'}}">Gear Rental</a></li>
-				<li><a href="{{pathFor 'winterSchool'}}">Winter School</a></li>
-				<li><a href="{{pathFor 'springYo'}}">SpringYO</a></li>
-				<li><a href="{{pathFor 'photos'}}">Photos</a></li>
-				<li><a href="{{pathFor 'buyingGear'}}">Buying Gear</a></li>
-			</ul>
-		</div>
-	</nav>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="{{pathFor 'trips'}}">Trips</a></li>
+					<li><a href="{{pathFor 'leaders'}}">Leaders</a></li>
+					<li><a href="{{pathFor 'membership'}}">Membership</a></li>
+					<li><a href="{{pathFor 'gear'}}">Gear Rental</a></li>
+					<li><a href="{{pathFor 'winterSchool'}}">Winter School</a></li>
+					<li><a href="{{pathFor 'springYo'}}">SpringYO</a></li>
+					<li><a href="{{pathFor 'photos'}}">Photos</a></li>
+					<li><a href="{{pathFor 'buyingGear'}}">Buying Gear</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 </template>
