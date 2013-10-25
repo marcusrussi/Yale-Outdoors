@@ -1,15 +1,6 @@
 <template name="nav">
-	<div class="col-md-2 main-nav">
-		<nav class="navbar navbar-default navbar-static-top">
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="{{pathFor 'home'}}">Yale Outdoors</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<div class="col-md-10 col-md-offset-2 main-nav moveable">
-		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+	<div class="col-md-5 col-md-offset-3">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -21,14 +12,14 @@
 		
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
+					<li><a href="{{pathFor 'home'}}">Yale Outdoors</a></li>
 					<li><a href="{{pathFor 'trips'}}">Trips</a></li>
 					<li><a href="{{pathFor 'leaders'}}">Leaders</a></li>
 					<li><a href="{{pathFor 'membership'}}">Membership</a></li>
-					<li><a href="{{pathFor 'gear'}}">Gear Rental</a></li>
-					<li><a href="{{pathFor 'winterSchool'}}">Winter School</a></li>
+					<li><a href="{{pathFor 'gear'}}">Gear</a></li>
+					<li><a href="{{pathFor 'winterSchool'}}">WSchool</a></li>
 					<li><a href="{{pathFor 'springYo'}}">SpringYO</a></li>
 					<li><a href="{{pathFor 'photos'}}">Photos</a></li>
-					<li><a href="{{pathFor 'buyingGear'}}">Buying Gear</a></li>
 				</ul>
 			</div>
 		</nav>

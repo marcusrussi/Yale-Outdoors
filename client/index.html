@@ -1,12 +1,29 @@
 <head>
 	<title>Yale Outdoors</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="skrollr.js"></script>
 </head>
 
 <template name="layout">
-	
 	{{yield "nav"}}
+	<div class="full leaves" data-bottom-top="background-position:0px 0px;"
+					  data-top-bottom="background-position: 0px -300px">
+		<div class="col-md-6 col-md-offset-3 section">
+			{{> trips}}
+		</div>
+	</div>
 	
-	{{yield}}
+	<div class="full water" data-bottom-top="background-position:0px 0px;"
+					  data-top-bottom="background-position: 0px -300px">
+		<div class="col-md-6 col-md-offset-3 section">
+			{{> leaders}}
+		</div>
+	</div>
 	
+	<div class="full snow" data-bottom-top="background-position:0px 0px;"
+					  data-top-bottom="background-position: 0px -300px">
+		<div class="col-md-6 col-md-offset-3 section">
+			{{> membership}}
+		</div>
+	</div>
 </template>
