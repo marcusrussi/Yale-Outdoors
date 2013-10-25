@@ -12,3 +12,6 @@ showdown
 iron-router
 jquery-waypoints
 less
+accounts-base
+accounts-ui
+accounts-password

@@ -1,9 +1,10 @@
 body {
 /*	background-image: url("http://upload.wikimedia.org/wikipedia/commons/7/7e/Franconia_Ridge.jpg");*/
 /*	background-size: cover;*/
-	padding-top: 70px;
+	padding-top: 50px;
 }
 
+/* the main sections of the page*/
 div.full {
 	background-size: cover;
 	width: 100%;
@@ -11,10 +12,19 @@ div.full {
 	margin-top: -5px;
 }
 
+/*  */
 div.section {
-	background-color: white;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+div.intro {
+	background-image: url("/franconia.jpg");
+}
+
+div.introPanel {
+	margin-top: 10%;
+	margin-bottom: 30%;
 }
 
 div.leaves {
@@ -27,4 +37,12 @@ div.water {
 
 div.snow {
 	background-image: url("/snow.jpg");
+}
+
+div.signUpModal {
+	width: 660px;
+}
+
+div.signInModal {
+	width: 495px;
 }

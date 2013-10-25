@@ -6,24 +6,24 @@
 
 <template name="layout">
 	{{yield "nav"}}
+	
+	<div class="full intro" data-bottom-top="background-position:0px 0px;"
+					  data-center-bottom="background-position: 0px -300px">
+		{{> intro}}
+	</div>
+	
 	<div class="full leaves" data-bottom-top="background-position:0px 0px;"
-					  data-top-bottom="background-position: 0px -300px">
-		<div class="col-md-6 col-md-offset-3 section">
-			{{> trips}}
-		</div>
+					  data-center-bottom="background-position: 0px -300px">
+		{{> trips}}
 	</div>
 	
 	<div class="full water" data-bottom-top="background-position:0px 0px;"
-					  data-top-bottom="background-position: 0px -300px">
-		<div class="col-md-6 col-md-offset-3 section">
-			{{> leaders}}
-		</div>
+					  data-center-bottom="background-position: 0px -300px">
+		{{> leaders}}
 	</div>
 	
 	<div class="full snow" data-bottom-top="background-position:0px 0px;"
-					  data-top-bottom="background-position: 0px -300px">
-		<div class="col-md-6 col-md-offset-3 section">
-			{{> membership}}
-		</div>
+					  data-center-bottom="background-position: 0px -300px">
+		{{> membership}}
 	</div>
 </template>
