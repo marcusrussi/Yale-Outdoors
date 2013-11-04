@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
 insecure
 preserve-inputs
 jquery
@@ -15,3 +14,7 @@ less
 accounts-base
 accounts-ui
 accounts-password
+
+accounts-entry
+reststop2
+bootstrap3-less

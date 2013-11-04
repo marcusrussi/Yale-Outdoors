@@ -1,0 +1,31 @@
+<template name="trip">
+	<div class="col-md-6 col-md-offset-1 section">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<p class="text-primary">
+					{{#if overnight}}
+						
+						from <strong>{{start}}</strong> to <strong>{{end}}</strong>
+						
+						<span class="label label-info">
+							overnight
+						</span>
+						
+					{{else}}
+					
+						<span class="label label-info">
+							day trip
+						</span>
+					
+					{{/if}}
+				</p>
+				
+				<h1>{{name}}</h1>
+				
+				<p>
+					{{#markdown}}{{description}}{{/markdown}}
+				</p>
+			</div>
+		</div>
+	</div>
+</template>

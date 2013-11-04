@@ -7,23 +7,34 @@
 <template name="layout">
 	{{yield "nav"}}
 	
-	<div class="full intro" data-bottom-top="background-position:0px 0px;"
-					  data-center-bottom="background-position: 0px -300px">
+	<div class="full intro" data-center-center="background-position:0px 0px;"
+					  data-top-bottom="background-position: 0px 300px">
 		{{> intro}}
 	</div>
 	
-	<div class="full leaves" data-bottom-top="background-position:0px 0px;"
-					  data-center-bottom="background-position: 0px -300px">
-		{{> trips}}
-	</div>
+	{{#each trips}}
+		<div class="full" 
+		data-bottom-top="background-position: 0px -200px"
+		data-top-bottom="background-position: 0px 200px"
+		style="background-image: url('{{image}}')">
+			{{> trip}}
+			
+			{{> guestList}}
+		</div>
+	{{/each}}
 	
-	<div class="full water" data-bottom-top="background-position:0px 0px;"
-					  data-center-bottom="background-position: 0px -300px">
+	<div class="full water" data-bottom-top="background-position:0px -200px;"
+					  data-top-bottom="background-position: 0px 200px">
 		{{> leaders}}
 	</div>
 	
-	<div class="full snow" data-bottom-top="background-position:0px 0px;"
-					  data-center-bottom="background-position: 0px -300px">
+	<div class="full snow" data-bottom-top="background-position:0px -200px;"
+					  data-top-bottom="background-position: 0px 200px">
 		{{> membership}}
 	</div>
+	
+	
+	{{> signUp}}
+	
+	{{> signIn}}
 </template>

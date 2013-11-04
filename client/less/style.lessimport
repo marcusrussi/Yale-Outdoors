@@ -1,10 +1,11 @@
 body {
-/*	background-image: url("http://upload.wikimedia.org/wikipedia/commons/7/7e/Franconia_Ridge.jpg");*/
-/*	background-size: cover;*/
+	/* padding keeps the nav bar from infringing upon the
+	   top content of the page */
 	padding-top: 50px;
 }
 
-/* the main sections of the page*/
+/* the main sections of the page, these have different
+   background images */
 div.full {
 	background-size: cover;
 	width: 100%;
@@ -12,7 +13,8 @@ div.full {
 	margin-top: -5px;
 }
 
-/*  */
+/* everything in a '.full' must be in this so that the
+   margins don't get screwed up */
 div.section {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -39,10 +41,12 @@ div.snow {
 	background-image: url("/snow.jpg");
 }
 
+
+/* these make it so that they're just wide enough */
 div.signUpModal {
-	width: 660px;
+	width: 670px;
 }
 
 div.signInModal {
-	width: 495px;
+	width: 510px;
 }

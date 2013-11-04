@@ -21,11 +21,16 @@
 				<li><a href="{{pathFor 'photos'}}">Photos</a></li>
 			</ul>
 			
+			<!-- if the user is logged in, give them a greeting
+				 and logout button -->
 			{{#if currentUser}}
 				<p class="navbar-text pull-right">howdy, {{currentUser.profile.name}}!</p>
 				<button type="button" class="btn btn-default navbar-btn navbar-right" id="signOut">
 					Sign out
 				</button>
+				
+			<!-- if they are not, give them the option to sign
+				 up or join -->
 			{{else}}
 		    	<div class="navbar-right">
 		    		<a data-toggle="modal" href="#signInModal" class="btn btn-primary navbar-btn" id="signInButton">Sign in</a>
@@ -34,8 +39,4 @@
 			{{/if}}
 		</div>
 	</nav>
-	
-	{{> signUp}}
-	
-	{{> signIn}}
 </template>

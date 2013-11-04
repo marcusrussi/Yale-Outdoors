@@ -1,0 +1,39 @@
+<template name="guestList">
+	<div class="col-md-4 section">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<strong>Spots are still available!</strong>
+			</div>
+			
+			<div class="panel-body">
+				<table class="table">
+					<thead>
+						<th>#</th>
+						<th>name</th>
+						<th>car?</th>
+						<th>spirit animal</th>
+					</thead>
+					<tbody>
+						{{#each attendees}}
+							<tr>
+								<td>1</td>
+								<td>{{userName}}</td>
+								<td>{{_car}}</td>
+								<td>{{spiritAnimal}}</td>
+							</tr>
+						{{/each}}
+						
+						{{#each openSpots}}
+							<tr class="success">
+								<td>{{number}}</td>
+								<td>could be u</td>
+								<td> </td>
+								<td>ye?</td>
+							</tr>
+						{{/each}}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</template>
