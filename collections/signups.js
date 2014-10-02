@@ -1,1 +1,0 @@
-Signups = new Meteor.Collection('signups');
