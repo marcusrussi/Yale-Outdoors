@@ -52,7 +52,7 @@ body {
     background-color: #95a0b3;
     border-radius: 3px;
     opacity: 0.95;
-    padding: 20px;
+    padding: 20px 60px 20px 60px;
     overflow: scroll;
     font-family: 'Droid Serif', serif;
     line-height: 1.5;
